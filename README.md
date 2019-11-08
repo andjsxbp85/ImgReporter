@@ -1,7 +1,7 @@
 # ImgReporter
 :art: This Repository will help you to manage image from serenity report (auto arranger and compressor image then stored it into a new floder in your Project folder) and in next version will be update in Testlink Auto Attachment for your Test Case Execution
 
-## HOW TO USE Image Compressor and Auto Arranger
+## HOW TO USE
 **Change maximum image size variable to your desired value (in KB):**
 >int maxImgSize = 70;
 * max image size each step in KiloBytes
