@@ -3,7 +3,7 @@
 
 ## HOW TO USE
 **Change your maximum image size variable to your desired value (in KB):**
->int maxImgSize = 40;
+>int maxImgSize = 70;
 * max image size each step in KiloBytes
 * write '0' to set default value (default value = 80 KB, max image size) 
 * Min of maxImgSize is 10, if u set under 10, it will be automatically set to 10
