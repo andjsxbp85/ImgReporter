@@ -7,7 +7,7 @@
 * max image size each step in KiloBytes
 * write '0' to set default value (default value = 80 KB, max image size) 
 * Min of maxImgSize is 10, if u set under 10, it will be automatically set to 10
-* Your image will be automatically arrange and stored in 'ScreenShots' folder in your test project
+* Your image will be automatically arranged and stored in 'ScreenShots' folder in your test project
 ```
 I use Intelij Idea as IDE , Please tell me the bugs to me, so I can fix it soon
 ```
