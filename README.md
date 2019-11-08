@@ -24,7 +24,7 @@ I use Intelij Idea as IDE , Please tell me the bugs, so I can fix it soon
 > Set the latest execution ID of your test case, but im in exploration step to know the ways to upload image to testlink automatically without set execution ID.
 **To Do List: **
 - [x] Upload in test case semi automate
-- [ ] Upload image to test case fully automate
+- [ ] Upload image to test case fully automated
 
 
 ## Contributors and Helper
