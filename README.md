@@ -13,9 +13,15 @@ I use Intelij Idea as IDE , Please tell me the bugs, so I can fix it soon
 ```
 
 
+*** in this version you can also upload the teslink image results semi-automatically by changing this variable:
+> int execID = 37191;
+> change 37191 to your last execution ID
+
+
+
 ## Next Version
 
-> Set your execution ID of latest execution test case, but im in exploration step to know the ways to upload image to testlink automatically without set execution ID.
+> Set the latest execution ID of your test case, but im in exploration step to know the ways to upload image to testlink automatically without set execution ID.
 **To Do List: **
 - [x] Upload in test case semi automate
 - [ ] Upload image to test case fully automate
