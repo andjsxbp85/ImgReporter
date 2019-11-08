@@ -1,7 +1,7 @@
 # ImgReporter
 This Repository will help you to manage image from serenity report (auto arranger and compressor image) and in next version will be update in Testlink Auto Attachment On your Test Case Execution
 
-==HOW TO USE ==
+==HOW TO USE
 Change your maximum image size variable to your desired value (in KB):
 >> write '0' to set default value (default value = 80 KB, max image size) <<
 >> Min of maxImgSize is 10, if u set under 10, it will be automatically set to 10
