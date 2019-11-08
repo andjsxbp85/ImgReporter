@@ -22,10 +22,10 @@ I use Intelij Idea as IDE , Please tell me the bugs, so I can fix it soon
 
 
 ## Contributors and Helper
-- :sweat_drops: Credit:
+> :sweat_drops: Credit:
 > Anjas Muhammad Bangun
 
-- :kissing_heart: Special Thanks:
+> :kissing_heart: Special Thanks:
 > - Allah SWT
 > - Billy Julius
 > - Bruno P. Kinoshita
