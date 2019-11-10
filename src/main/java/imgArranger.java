@@ -33,7 +33,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class imgArranger extends SerenityStory {
+public class imgArranger extends SerenityStory{
     protected TestOutcome testOutcome;
     protected String errorMessage = null;
     protected Boolean isSuccess = true;
