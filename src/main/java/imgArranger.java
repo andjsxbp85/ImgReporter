@@ -55,9 +55,9 @@ public class imgArranger {
     //Image Compressor By Anjas//
     //write '0' to set default value (default value = 80 KB, max image size)
     //Min of maxImgSize is 10, if u set under 10, it will be automatically set to 10
-    int maxImgSize = 40; //max image size each step in KiloBytes
+    int maxImgSize = 50; //max image size each step in KiloBytes
     //Image uploader by Anjas
-    int execID = 37191; //Change into your execution ID
+    int execID = 37191; //Change into your testlink execution ID
 
     @AfterScenario(uponType = ScenarioType.NORMAL)
     public void TestLinkIntegration() throws IOException {
