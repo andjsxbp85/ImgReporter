@@ -258,7 +258,7 @@ public class imgArranger {
                         compressImage(direktoriSS,storyName,TestCaseName,"Step " +count,count);
                     }
                 } catch (Exception e) {
-                    System.out.println("Gagal comprees karena " + e.getMessage());
+                    //System.out.println("Gagal comprees karena " + e.getMessage());
                 }
             }
         }
@@ -318,7 +318,6 @@ public class imgArranger {
         BufferedImage newBufferedImage = new BufferedImage(bufferedImage.getWidth(), bufferedImage.getHeight(), BufferedImage.TYPE_INT_RGB);
         newBufferedImage.createGraphics().drawImage(bufferedImage, 0, 0, Color.WHITE, null);
         ImageIO.write(newBufferedImage, "jpg", new File(direktoriFile));
-        waterMarkImg(direktoriFile,"./ScreenShots/"+storyName+"/"+tcName+"/"+targetDirectory);
 
         File gambarCompress = new File(direktoriFile);
         maxImgSize = maxImgSize < 10 ? maxImgSize==0 ? 80:10 : maxImgSize; //80 = Default value
@@ -442,27 +441,3 @@ public class imgArranger {
 
         Assert.assertNotNull(attachment);
     }
-
-    private void waterMarkImg(String originFile, String destination){
-        File origFile = new File(originFile);
-        ImageIcon icon = new ImageIcon(origFile.getPath());
-        BufferedImage bufferedImage = new BufferedImage(icon.getIconWidth(), icon.getIconHeight(), BufferedImage.TYPE_INT_RGB);
-        Graphics graphics = bufferedImage.getGraphics();
-        graphics.drawImage(icon.getImage(), 0, 0, null);
-        graphics.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 10));
-        FontMetrics fm = graphics.getFontMetrics();
-        graphics.setColor(Color.BLACK);
-        String wmkImg = "Tested By Anjas";
-        graphics.drawString(new String(java.util.Base64.getDecoder().decode("wqkgVGVzdGVkIEJ5IEFOSkFT=")), (fm.stringWidth(wmkImg)/10), icon.getIconHeight()-(fm.getHeight() / 2));// + fm.getAscent());
-        graphics.dispose();
-
-        File newFile = new File(destination+".jpg");
-        try {
-            ImageIO.write(bufferedImage, "jpg", newFile);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println(newFile.getPath() + " created successfully!");
-    }
-}
